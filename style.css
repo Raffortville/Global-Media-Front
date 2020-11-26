@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 1px;
+    color: rgb(46, 82, 153);
+}
+
+/****************  MIXINS FLEX  ********************/
+
+.d-flex {
+
+    display: flex;
+}
+
+.d-flex-col {
+
+    flex-direction: column;
+    display: flex;
+}
+
+.d-flex-center {
+
+    justify-content: center;
+    display: flex;
+}
+
+.d-flex-col-center {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d-flex-center-align {
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.d-flex-col-center-align {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.d-flex-space {
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.d-flex-space-alignCenter{
+
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.d-flex-space-alignBase{
+
+    justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-wrap {
+
+    flex-wrap: wrap;
+}
+
+
+/****************** SPACING,TYPO,STYLING,EFFET    ************************/
+
+.width100 {
+
+    width: 100%;
+}
+
+.bgNav {
+    background: rgb(133,51,255);
+    background: linear-gradient(90deg, rgba(133,51,255,0.09 )20%, rgba(133,51,255,0.09) 80%); 
+}
+
+.height100 {
+
+    height: 100%;
+}
+
+.borderTest {
+
+    border:1px solid black;
+}
+
+.borderNav {
+
+    border-bottom: 1px solid lightgray;
+}
+
+
+/*************** COMPONENTS ************/
+
+.header-nav {
+
+    height: 10vh;
+}
+
+.nav-under {
+
+    height: 10vh;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.titreLogo {
+
+    font-family: 'Patua One', cursive;
+    font-size: 3.6em;
+    font-weight: 600;
+    letter-spacing: 4px !important;
+    color: rgb(38, 0, 255) !important;
+}
+
+.wrapToEnglish {
+
+    clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+    background: rgb(133,51,255);
+    background: linear-gradient(90deg, rgba(133,51,255,0.10) 20%, rgba(133,51,255,0.10) 80%); 
+    width: 14%;
+    padding-right: 15px;
+    font-size: 0.9em;
+    margin-top: -3px;
+}
+
+.iconToEnglish {
+
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.wrapIconUser {
+
+    padding-top: 15px !important;
+}
+
+.iconUser {
+
+    padding-right: 15px;
+
+}
+
+.nav-under2 {
+
+    background: rgb(133,51,255);
+    background: linear-gradient(90deg, rgba(133,51,255,0.09 )20%, rgba(133,51,255,0.09) 80%);
+}
+
+.iconSort { 
+
+    margin-left: 5px;
+}
+
+.wrapSearch {
+
+    width: 280px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.searchPara {   
+
+    opacity: 0.7;
+    transition: 0.2s;
+    font-size: 1.3em;
+}
+
+.searchInput {
+
+    width:0px;
+    transition:  width 0.5s;
+    opacity: 0;
+}
+
+.searchInputEffect {
+
+    width: 200px;
+    margin-right: 5px;
+    transition:  width 0.5s;
+}
+
+.searchPara:hover {   
+
+    opacity: 1;
+}
+
+
+/************ Burger Menu *************/
+
+
+.wrapBurgerMenu {
+
+    padding-left: 15px;
+    width: 8%;
+    cursor: pointer;
+   
+}
+
+.titreMenu {
+
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.burgerLine0 {
+
+    width:25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgb(46, 82, 153);
+    transition: width 0.9s;
+    
+}
+
+.burgerLine1 {
+
+    width:25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgb(46, 82, 153);
+    transition: width 0.6s;
+
+}
+
+.burgerLine2 {
+
+    width:25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgb(46, 82, 153);
+    transition: width 0.3s;
+}
+
+.burgerLineEffect0 {
+
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: rgb(245, 39, 39);
+    transition: width 0.3s;
+    
+}
+.burgerLineEffect1 {
+
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: rgb(31, 31, 230);
+    transition: width 0.6s;
+   
+}
+.burgerLineEffect2 {
+
+
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: rgb(255, 58, 9);
+    transition: width 0.9s;
+}
+
+
+
