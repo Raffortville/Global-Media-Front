@@ -34,6 +34,8 @@ let toggleBurgerMenu = false
 
 const searchPara = document.querySelector('.searchPara')
 const searchInput = document.querySelector('.searchInput')
+const main = document.getElementById('mainFisrt')
+
 
 let toggleSearchBarEffect = false
 
@@ -42,21 +44,64 @@ searchPara.addEventListener('click', () => {
   if(!toggleSearchBarEffect){
 
     replaceClass(searchInput,'searchInput','searchInputEffect')
-
+    
     toggleSearchBarEffect = true
 
   } else {
 
     replaceClass(searchInput,'searchInputEffect','searchInput')
+    
 
     toggleSearchBarEffect = false
   }
     
 });
     
-    //**********************   Switch "class"  FUNCTION  ***************/
 
-    const replaceClass = (start,originalClass,newClass) => start.classList.replace(originalClass,newClass)
+/*********************************** MODAL NAVBAR ******************************************/
+
+const lifeDropdown = document.getElementById('Life')
+const modalNavMenu = document.getElementById('modalMenuJumbtron')
+const wrapMenuModal = document.querySelector('.wrapMenuModal')
+
+let toggleDropdown = false
+
+
+lifeDropdown.addEventListener('click',() => {
+
+  if(!toggleDropdown){
+
+    replaceClass(modalNavMenu,'modalNavMenu',"modalNavMenuEffect")
+    replaceClass(wrapMenuModal,'wrapMenuModal','wrapMenuModalEffect')
+
+    toggleDropdown = true;
+
+  } else{
+
+    replaceClass(modalNavMenu,'modalNavMenuEffect','modalNavMenu')
+    replaceClass(wrapMenuModal,'wrapMenuModalEffect','wrapMenuModal')
+
+    toggleDropdown = false;
+  }
+})
+
+
+
+
+
+//**********************   Switch  CSS "class"  FUNCTION  ***************/
+
+const replaceClass = (start,originalClass,newClass) => start.classList.replace(originalClass,newClass)
+
+//**********************   add  CSS "class"  FUNCTION  ***************/
+
+const addClass = (start,newClass) => start.classList.add(newClass);
+
+//**********************   remove  CSS "class"  FUNCTION  ***************/
+
+const removeClass = (start,removedClass) =>  start.classList.remove(removedClass);
+
+
 
 
 
