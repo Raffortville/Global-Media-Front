@@ -9,39 +9,43 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
+</head> 
   <body>
-    <nav class="navbar navbar-default  bgNav">
-        <div class=" header-nav d-flex-space-alignCenter width100" >
-            <div id="lang" class="wrapToEnglish height100 d-flex-center-align">
+    <nav class=" navbar navbar-default bgNav">
+        <div class=" header-nav d-flex-space-alignCenter row" >
+            <div id="lang" class="col-md-2 col-sm-3 col-xs-3 wrapToEnglish height100 d-flex-center-align ">
                 <p>English / US Edition</p>
-               
                 <i class="far fa-arrow-alt-circle-right fa-lg iconToEnglish"></i>
             </div>
-            <div id="logo" class="height100 d-flex-center-align">
-                <h1 class="titreLogo">GLOBAL</h1>
+            <div id="logo" class="col-md-9 col-sm-7 col-xs-7 height100 d-flex-center-align">
+                <h1 class=" hidden-sm hidden-xs titreLogo">GLOBAL</h1>
+                <h2 class=" visible-sm visible-xs titreLogoXS">GLOBAL</h2>
                 </div>
-            <div id="connexion" class="height100 d-flex-center-align wrapIconUser">
-                <i class="fas fa-user fa-2x iconUser"></i>
+            <div id="connexion" class="col-md-1 col-sm-2 height100 d-flex-center-align wrapIconUser">
+                <i class=" hidden-sm hidden-xs fas fa-user fa-2x iconUser"></i>
+                <i class="visible-sm visible-xs fas fa-user fa-lg iconUser"></i>
             </div>
         </div>
-        <div class="nav-under d-flex-space-alignCenter">
-            <div id="burgerMenu" class="wrapBurgerMenu d-flex-space">
+        <div class="nav-under d-flex-space-alignCenter row">
+            <div id="burgerMenu" class="wrapBurgerMenu d-flex-start-align col-md-1 col-sm-1 col-xs-1 ">
                 <div class=" d-flex-col wrapBurgerLine">
                     <span id="burgerLineEffect0" class="burgerLine0"></span>
                     <span id="burgerLineEffect1" class="burgerLine1"></span>
                     <span id="burgerLineEffect2" class="burgerLine2"></span>
                 </div>
-                <div class="titreMenu">
-                    <h4>Menu</h4>
+                <div class=" hidden-sm hidden-xs">
+                    <h4 class="ml15" >Menu</h4>
                 </div>
             </div>
-            <div class="d-flex-space-alignBase wrapSearch">
+            <div class=" d-flex-end-alignBase wrapSearch col-md-3 col-md-offset-8 col-sm-5 col-sm-offset-6 col-xs-offset-1 col-xs-10  ">
                 <input type="text" class="form-control searchInput" placeholder="Search">
-                <p class="searchPara">Search <i class="fas fa-search"></i></p>
+                <div class="d-flex-center-alignBase">
+                    <p class="searchPara ">Search</p>
+                    <i class="fas fa-search iconSort"></i>
+                </div>
             </div>
         </div>
-        <div class="nav-under2 d-flex-center-align ">
+        <div class="nav-under2 hidden-sm hidden-xs d-flex-center-align ">
             <div id="topics">
                 <ul class="nav nav-pills">  
                     <li class="navLink" id="Culture" role="presentation" ><a class="link" href="#">Culture</a></li>

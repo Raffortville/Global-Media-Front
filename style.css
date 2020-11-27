@@ -46,6 +46,27 @@
     align-items: center;
 }
 
+.d-flex-start-align {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.d-flex-end-alignBase {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline ;
+}
+
+.d-flex-center-alignBase {
+
+ display: flex;
+ justify-content: center;
+ align-items: baseline;
+}
+
 .d-flex-col-center-align {
 
     display: flex;
@@ -115,6 +136,11 @@
     margin-right: 50px;
 } 
 
+.ml15 {
+
+    margin-left: 15px;
+}
+
 .noStyleList {
 
     list-style: none;
@@ -130,7 +156,7 @@
 
 .nav-under {
 
-    height: 10vh;
+    height: 7vh;
     width: 100%;
 }
 
@@ -141,6 +167,16 @@
     font-weight: 600;
     letter-spacing: 4px !important;
     color: rgb(38, 0, 255) !important;
+}
+
+.titreLogoXS {
+
+    font-family: 'Patua One', cursive;
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: 3px !important;
+    color: rgb(38, 0, 255) !important;
+
 }
 
 .titreModal {
@@ -154,10 +190,9 @@
     clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
     background: rgb(133,51,255);
     background: linear-gradient(90deg, rgba(133,51,255,0.10) 20%, rgba(133,51,255,0.10) 80%); 
-    width: 14%;
-    padding-right: 15px;
     font-size: 0.9em;
     margin-top: -3px;
+    
     cursor: pointer;
 }
 
@@ -181,7 +216,6 @@
 
     background: rgb(133,51,255);
     background: linear-gradient(90deg, rgba(133,51,255,0.09 )20%, rgba(133,51,255,0.09) 80%);
-
 }
 
 .iconSort { 
@@ -190,11 +224,11 @@
 }
 
 .wrapSearch {
-
-    width: 320px;
-    padding-right: 15px;
+    
     cursor: pointer;
 }
+
+
 
 .searchPara {   
 
@@ -212,7 +246,7 @@
 
 .searchInputEffect {
 
-    width: 200px;
+    width: 205px;
     margin-right: 5px;
     transition:  width 0.5s;
 }
@@ -273,10 +307,8 @@
 
 .wrapBurgerMenu {
 
-    padding-left: 15px;
-    width: 8%;
     cursor: pointer;
-   
+    margin-left: 15px;
 }
 
 .titreMenu {
@@ -335,7 +367,6 @@
    
 }
 .burgerLineEffect2 {
-
 
     width:5px;
     height: 5px;
